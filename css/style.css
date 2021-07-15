@@ -1,0 +1,289 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* common styles or utilities */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 1164px;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: #e02c6d;
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/* Header Area Styles */
+#header {
+  background-color: #2d25a0;
+  padding: 42px 0;
+}
+/* Menu Area Styles */
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-bar ul li {
+  display: inline-block;
+  margin-right: 36px;
+}
+.menu-bar ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+.login-area a .fa-arrow-right {
+  margin-right: 8px;
+}
+/* Banner Area Styles */
+#banner-area {
+  margin: 50px 0;
+}
+.banner-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content {
+  margin: 50px 0 44px 0;
+}
+.banner-title {
+  font-size: 64px;
+  color: #fff;
+  margin: 0 0 27px 0;
+}
+.banner-info a span {
+  margin-right: 8px;
+}
+.banner-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.banner-image img {
+  width: 388px;
+  height: 428px;
+}
+.banner-image img.football{
+  position: absolute;
+  top: 134px;
+  right: 464px;
+  width: 60px;
+  height: 60px;
+  transition: transform 0.1s ease-out 0.1s;
+}
+.banner-image:hover img.football{
+  transform: translateY(-200px);
+}
+.banner-image img.football-player{
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 520px;
+  transform: rotate(-10deg);
+  transition: transform 0.1s ease-in;
+}
+.banner-image:hover img.football-player{
+  transform: rotate(5deg);
+}
+/* Players Gellary Area Styles */
+.gellary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+  margin: 70px 0;
+}
+.player-card {
+  width: 330px;
+  height: 474px;
+  padding: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.player-card img {
+  width: 100%;
+  height: 256px;
+}
+.player-name {
+  font-size: 28px;
+  color: #18191f;
+  margin: 16px 0;
+}
+.player-about {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin: 0;
+}
+.ellipsis {
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 95%;
+  text-overflow: ellipsis;
+  color: #6c6c6c;
+}
+/* Highlights Area Styles */
+#highlights {
+  margin: 70px 0;
+}
+.highlights-content-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.highlights-content .content-title {
+  font-size: 48px;
+  margin: 10px 0;
+  color: #0a0826;
+}
+.highlights-content .content-detail {
+  width: 404px;
+  margin-bottom: 30px;
+  color: #6c6c6c;
+}
+.highlights-content a span {
+  margin-right: 8px;
+}
+.highlights-image img {
+  width: 567px;
+  height: 427px;
+}
+/* Key Players Styles */
+#key-players{
+  margin: 50px 0;
+}
+.key-players-title{
+  text-align: center;
+  color: #221f1b;
+  font-size: 36px;
+}
+.key-players-main-wrap{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.key-player{
+  width: 299px;
+}
+.key-player-image img{
+  width: 299px;
+  height: 301px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.key-player-info{
+  text-align: center;
+}
+.key-player-info .key-player-name{
+  font-size: 20px;
+  margin: 10px 0;
+  color: #0a0826;
+}
+.key-player-position{
+  color: #6c6c6c;
+  font-size: 13px;
+  font-weight: 700;
+}
+/* Club Area Styles */
+section#club {
+  margin: 30px 0;
+  padding: 70px 0;
+}
+.club-main-wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.club-title{
+  color: #0a0826;
+  font-size: 48px;
+  margin: 0;
+}
+.club-detail{
+  color: #6c6c6c;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.club-signup-form {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  width: 572px;
+  height: 58px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input[type="email"],input[type="submit"]{
+  outline: none;
+  border: none;
+}
+input[type="email"] {
+  width: 445px;
+  height: 30px;
+  padding: 12px;
+  font-size: 14px;
+}
+input[type="submit"] {
+  color: #0a0826;
+  margin: -5px;
+  padding: 19px 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* Footer Area Styles */
+#footer {
+  margin: 60px 0;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo img {
+  width: 484px;
+}
+.footer-social-icon {
+  margin: 20px 0;
+}
+.footer-social-icon a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #969bab;
+  background: #969bab48;
+  line-height: 32px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 7px;
+}
+.footer-content p {
+  margin: 0;
+  font-size: 18px;
+  color: #0a0826;
+}
